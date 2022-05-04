@@ -23,6 +23,6 @@ Route::get('/', function () {
 Route::get('/cards', function () {
     $headerData = config('headerData');
     $footerData = config('footerData');
-
-    return view('guest.main-cards', ['headerData' => $headerData], ['footerData' => $footerData]);
+    $comics = config('comics');
+    return view('guest.main-cards', ['headerData' => $headerData], ['footerData' => $footerData], ['comics' => $comics]);
 });
