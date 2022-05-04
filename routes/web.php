@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 //! PAGINA PRINCIPALE
 Route::get('/', function () {
     $headerData = config('headerData');
-    return view('layouts.app', ['headerData' => $headerData]);
+    $footerData = config('footerData');
+    return view('layouts.app', ['headerData' => $headerData], ['footerData' => $footerData]);
 });
