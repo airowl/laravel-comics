@@ -22,18 +22,15 @@ a {
   align-items: center;
   height: 15vh;
 }
-
 #header nav.header-nav {
   height: 100%;
 }
-
 #header nav.header-nav ul {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: "";
 }
-
 #header nav.header-nav ul li {
   margin-left: 2rem;
   height: 100%;
@@ -42,15 +39,57 @@ a {
   align-items: center;
   border-bottom: 4px solid transparent;
 }
-
-#header nav.header-nav ul li.active,
-#header nav.header-nav ul li:hover {
+#header nav.header-nav ul li.active, #header nav.header-nav ul li:hover {
   border-bottom: 4px solid #0282f9;
 }
-
 #header nav.header-nav ul li a {
   color: black;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
+#footer-top {
+  height: 18rem;
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#footer-top div.footer-top-content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: "";
+  height: 100%;
+}
+#footer-top div.footer-top-content-links {
+  width: 50%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: "";
+  align-items: "";
+}
+#footer-top div.footer-top-content-links .col:nth-child(2) {
+  margin: 0 2rem;
+}
+#footer-top div.footer-top-content-links h4 {
+  text-transform: uppercase;
+  color: white;
+}
+#footer-top div.footer-top-content-links ul {
+  padding: 1rem 0;
+}
+#footer-top div.footer-top-content-links ul li {
+  font-size: 0.6rem;
+}
+#footer-top div.footer-top-content-links ul li a {
+  color: #b4b4b4;
+}
+#footer-top div.footer-top-content div.footer-top-bg {
+  width: 40%;
+  height: 100%;
+  background-image: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
