@@ -1,0 +1,10 @@
+@mixin container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@mixin d-flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
