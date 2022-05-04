@@ -17,5 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $headerData = config('headerData');
     $footerData = config('footerData');
-    return view('layouts.app', ['headerData' => $headerData], ['footerData' => $footerData]);
+    return view('layouts.app');
+});
+
+Route::get('/cards', function () {
+    $headerData = config('headerData');
+    $footerData = config('footerData');
+
+    return view('guest.main-cards', ['headerData' => $headerData], ['footerData' => $footerData]);
 });
