@@ -52,3 +52,24 @@
         </div>
     </div>
 </div>
+
+<div id="footer-bottom">
+    <div class="container">
+        <div class="sing-up">
+            <a href="#">
+                Sign-up Now!
+            </a>
+        </div>
+        <div class="social-icons">
+            <h4>Follow us</h4>
+            @foreach ($footerData['iconLinks'] as $element)
+                <a href="{{ $element['url']}}">
+                    <img src="{{ asset($element['image'])}}" alt="Facebook Logo">
+                </a>
+            @endforeach
+
+
+        </div>
+    </div>
+
+</div>

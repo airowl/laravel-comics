@@ -150,23 +150,23 @@ return [
     ],
     iconLinks => [
         [
-            image => 'footer-facebook.png',
+            image => 'img/footer-facebook.png',
             url => '#'
         ],
         [
-            image => 'footer-twitter.png',
+            image => 'img/footer-twitter.png',
             url => '#'
         ],
         [
-            image => 'footer-youtube.png',
+            image => 'img/footer-youtube.png',
             url => '#'
         ],
         [
-            image => 'footer-pinterest.png',
+            image => 'img/footer-pinterest.png',
             url => '#'
         ],
         [
-            image => 'footer-periscope.png',
+            image => 'img/footer-periscope.png',
             url => '#'
         ]
     ]

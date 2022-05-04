@@ -54,7 +54,7 @@ a{
 
 }
 
-// FOOTER
+// FOOTER TOP
 
 #footer-top{
     height: 18rem;
@@ -104,4 +104,46 @@ a{
             background-position: center;
         }
     }
+}
+
+// FOOTER BOTTOM
+#footer-bottom{
+    height: calc(100% - 80%);
+    background-color: #303030;
+    padding: 1rem 0;
+
+    div.container{
+        @include container;
+        @include d-flex(space-between, center);
+        height: 100%;
+
+        .sing-up{
+
+            a{
+                display: inline-block;
+                color: white;
+                border: 2px solid $secondaryColor;
+                padding: .7rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
+        .social-icons{
+            @include d-flex('', center);
+
+            h4{
+                text-transform: uppercase;
+                color: $secondaryColor;
+                font-weight: bold;
+            }
+
+            a {
+                margin-left: 1rem;
+            }
+
+        }
+
+    }
+
 }
