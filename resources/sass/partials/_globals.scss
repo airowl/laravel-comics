@@ -58,7 +58,7 @@ a{
 
 #footer-top{
     height: 18rem;
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url('/img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -97,7 +97,7 @@ a{
         div.footer-top-bg{
             width: 40%;
             height: 100%;
-            background-image: url(../assets/img/dc-logo-bg.png);
+            background-image: url('/img/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
