@@ -21,7 +21,6 @@ a {
 }
 
 main {
-  background-color: black;
   color: white;
 }
 
@@ -146,11 +145,7 @@ footer {
 
 #main-content {
   text-align: center;
-}
-#main-content #jumbotron {
-  height: 23rem;
-  background-image: url("/img/jumbotron.jpg");
-  background-size: cover;
+  background-color: black;
 }
 #main-content div.album {
   width: 70%;
@@ -179,15 +174,23 @@ footer {
   background-color: #0282f9;
 }
 #main-content a {
+  color: white;
+}
+#main-content a.load-more {
   display: inline-block;
   width: 14rem;
   height: 3rem;
   line-height: 3rem;
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #0282f9;
   margin-bottom: 1.5rem;
+}
+
+#jumbotron {
+  height: 23rem;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
 }
 
 div.album-card {
@@ -234,4 +237,83 @@ div.album-card div.album-image img {
 }
 #main-bottom .container ul li a p {
   text-transform: uppercase;
+}
+
+#image-card {
+  background-color: #0282f9;
+}
+#image-card .container {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  height: 4rem;
+}
+#image-card img {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
+
+#description-card {
+  color: black;
+}
+#description-card .heading-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 3rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+#description-card .heading-card .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: #55ba59;
+  color: #a9f990;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+#description-card .heading-card .label span {
+  color: white;
+}
+#description-card .heading-card .label .label-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+#description-card .sub-heading-card {
+  background-color: #f6f6f6;
+}
+#description-card .sub-heading-card div.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+#description-card .sub-heading-card div.container .talent,
+#description-card .sub-heading-card div.container .specs {
+  width: 50%;
+}
+#description-card .sub-heading-card div.container li {
+  list-style-type: none;
+  display: flex;
+  padding: 0.5rem 0;
+  border-top: 1px solid grey;
+}
+#description-card .sub-heading-card div.container li:last-child {
+  border-bottom: 1px solid grey;
+}
+#description-card .sub-heading-card div.container li div.title {
+  width: 30%;
+}
+#description-card .sub-heading-card div.container li div.result {
+  width: 70%;
 }
