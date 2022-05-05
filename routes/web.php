@@ -32,5 +32,4 @@ Route::get('/cards/{index}', function ($index) {
     } else {
         abort(404);
     }
-
-});
+})->name('guest-singlecard');
