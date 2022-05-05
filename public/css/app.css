@@ -6,12 +6,27 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 li {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  color: white;
 }
 
 #header {
@@ -127,4 +142,67 @@ a {
 }
 #footer-bottom div.container .social-icons a {
   margin-left: 1rem;
+}
+
+#main-content {
+  text-align: center;
+}
+#main-content #jumbotron {
+  height: 23rem;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+}
+#main-content div.album {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: "";
+  flex-wrap: wrap;
+  gap: 2rem 0;
+  position: relative;
+  padding: 3rem 0;
+}
+#main-content div.album::before {
+  content: "Current series";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 12rem;
+  height: 4rem;
+  background-color: #0282f9;
+}
+#main-content a {
+  display: inline-block;
+  width: 14rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #0282f9;
+  margin-bottom: 1.5rem;
+}
+
+div.album-card {
+  width: calc(16.6666666667% - 1rem);
+  text-align: start;
+}
+div.album-card h4 {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+div.album-card div.album-image {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+}
+div.album-card div.album-image img {
+  width: 100%;
 }

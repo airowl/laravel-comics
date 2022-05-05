@@ -16,7 +16,7 @@
     </header>
 
     <main>
-        @yield('main-cards')
+        @yield('main-content')
     </main>
 
     <footer>

@@ -1,19 +1,18 @@
 @extends('layouts.app')
 
-@section('main-cards')
+@section('main-content')
 <div id="main-content">
     <div id="jumbotron">
     </div>
     <div class="album">
-        <div class="album-card">
-            @foreach ( as )
-
-            @endforeach
-            <div class="album-image">
-                <img :src="singleCard.thumb" :alt="singleCard.series">
+        @foreach ($comicsData as $element)
+            <div class="album-card">
+                <div class="album-image">
+                    <img src="{{$element['thumb']}}" alt="{{$element['series']}}">
+                </div>
+                <h4>{{$element['series']}}</h4>
             </div>
-            <h4>{{singleCard.series}}</h4>
-        </div>
+        @endforeach
     </div>
     <a href="#" class="load-more">load more</a>
 </div>

@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $headerData = config('headerData');
     $footerData = config('footerData');
-    return view('layouts.app');
+    return view('layouts.app', ['headerData' => $headerData], ['footerData' => $footerData]);
 });
 
 Route::get('/cards', function () {
     $headerData = config('headerData');
     $footerData = config('footerData');
-    $comics = config('comics');
-    return view('guest.main-cards', ['headerData' => $headerData], ['footerData' => $footerData], ['comics' => $comics]);
+    $comicsData = config('comicsData');
+    return view('guest.main-cards', ['headerData' => $headerData, 'footerData' => $footerData, 'comicsData' => $comicsData]);
 });
