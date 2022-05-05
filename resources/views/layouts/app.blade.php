@@ -12,7 +12,7 @@
 
     <header>
         {{-- include serve per importare parti del body che devo rimanere fissi per tutte le pagine --}}
-        @include('partials.header')
+        @include('partials.header', ['headerData' => config('headerData')])
     </header>
 
     <main>
@@ -21,7 +21,7 @@
 
     <footer>
         {{-- include serve per importare parti del body che devo rimanere fissi per tutte le pagine --}}
-        @include('partials.footer')
+        @include('partials.footer', ['footerData' => config('footerData')])
     </footer>
 
 </body>
