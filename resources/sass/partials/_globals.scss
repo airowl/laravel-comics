@@ -234,3 +234,34 @@ div.album-card{
         }
     }
 }
+
+// MAIN BOTTOM
+#main-bottom{
+    background-color: $secondaryColor;
+    //height: 10vh;
+    width: 100%;
+
+    .container{
+        @include container;
+
+        ul{
+            @include d-flex(space-evenly, '');
+            align-items: center;
+            padding: 2rem 0;
+
+            li a{
+                @include d-flex('', center);
+                color: white;
+
+                img{
+                    width: 20%;
+                    margin-right: 1rem;
+                }
+
+                p{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

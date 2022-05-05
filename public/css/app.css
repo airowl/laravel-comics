@@ -206,3 +206,32 @@ div.album-card div.album-image {
 div.album-card div.album-image img {
   width: 100%;
 }
+
+#main-bottom {
+  background-color: #0282f9;
+  width: 100%;
+}
+#main-bottom .container {
+  width: 70%;
+  margin: 0 auto;
+}
+#main-bottom .container ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: "";
+  align-items: center;
+  padding: 2rem 0;
+}
+#main-bottom .container ul li a {
+  display: flex;
+  justify-content: "";
+  align-items: center;
+  color: white;
+}
+#main-bottom .container ul li a img {
+  width: 20%;
+  margin-right: 1rem;
+}
+#main-bottom .container ul li a p {
+  text-transform: uppercase;
+}

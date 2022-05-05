@@ -20,5 +20,6 @@ Route::get('/', function () {
 
 Route::get('/cards', function () {
     $comicsData = config('comicsData');
-    return view('guest.main-cards', [ 'comicsData' => $comicsData]);
+    $mainBottomData = config('mainBottomData');
+    return view('guest.main-cards', [ 'comicsData' => $comicsData, 'mainBottomData' => $mainBottomData]);
 });
