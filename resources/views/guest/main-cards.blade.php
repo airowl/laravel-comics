@@ -2,20 +2,20 @@
 
 @section('main-content')
 <div id="main-content">
-    <div id="jumbotron">
-    </div>
-    <div class="album">
-        @foreach ($comicsData as $element)
-            <div class="album-card">
-                <div class="album-image">
-                    <img src="{{ asset($element['thumb']) }}" alt="{{$element['series']}}">
-                </div>
-                <h4>{{$element['series']}}</h4>
+<div class="album">
+    @foreach ($comicsData as $index => $element)
+        <div class="album-card">
+            <div class="album-image">
+                <img src="{{ asset($element['thumb']) }}" alt="{{$element['series']}}">
             </div>
-        @endforeach
-    </div>
-    <a href="#" class="load-more">load more</a>
+            <a href="{{ route('guest-singlecard', ['index' => $index]) }}">
+                <h4>{{$element['series']}}</h4>
+            </a>
+        </div>
+    @endforeach
 </div>
+</div>
+<a href="#" class="load-more">load more</a>
 <div id="main-bottom">
     <div class="container">
         <ul>
@@ -27,7 +27,6 @@
                 </a>
             </li>
             @endforeach
-
         </ul>
     </div>
 </div>

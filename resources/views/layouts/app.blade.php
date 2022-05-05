@@ -16,6 +16,8 @@
     </header>
 
     <main>
+        <div id="jumbotron">
+        </div>
         @yield('main-content')
     </main>
 
