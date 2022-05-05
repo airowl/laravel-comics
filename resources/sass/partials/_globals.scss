@@ -26,7 +26,6 @@ a{
 
 // GENERAL
 main{
-    background-color: black;
     color: white;
 }
 
@@ -169,13 +168,7 @@ footer{
 
 #main-content{
     text-align: center;
-
-
-    #jumbotron{
-        height: 23rem;
-        background-image: url('/img/jumbotron.jpg');
-        background-size: cover;
-    }
+    background-color: black;
 
     div.album{
         @include container;
@@ -201,17 +194,26 @@ footer{
     }
 
     a{
+        color: white;
+    }
+
+    a.load-more{
         display: inline-block;
         width: 14rem;
         height: 3rem;
         line-height: 3rem;
-        color: white;
         text-transform: uppercase;
         font-weight: bold;
         background-color: $secondaryColor;
         margin-bottom: 1.5rem;
     }
 
+}
+
+#jumbotron{
+    height: 23rem;
+    background-image: url('/img/jumbotron.jpg');
+    background-size: cover;
 }
 
 // ALBUM CARD
@@ -264,4 +266,102 @@ div.album-card{
             }
         }
     }
+}
+
+// SINGLE PAGE CARD
+
+#image-card{
+    background-color: #0282f9;
+
+    .container{
+        @include container;
+        position: relative;
+        height: 4rem;
+    }
+
+    img{
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+    }
+
+}
+
+#description-card{
+    color: black;
+
+    .heading-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        padding: 3rem 0;
+        @include container;
+
+        .label{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 3rem;
+            background-color: #55ba59;
+            color: #a9f990;
+            font-weight: 600;
+            margin: 2rem 0;
+
+            span{
+                color: white;
+            }
+
+            .label-left{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                width: 40%;
+            }
+        }
+    }
+
+    .sub-heading-card{
+        background-color: #f6f6f6;
+
+        div.container{
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+            padding: 3rem 0;
+            @include container;
+
+            .talent,
+            .specs{
+                width: calc(100% / 2);
+            }
+
+            li{
+                list-style-type: none;
+                display: flex;
+                padding: .5rem 0;
+                border-top: 1px solid grey;
+
+                &:last-child{
+                    border-bottom: 1px solid grey;
+                }
+
+                div.title{
+                    width: 30%;
+                }
+
+                div.result{
+                    width: calc(100% - 30%);
+                }
+
+            }
+
+        }
+
+
+
+    }
+
 }
